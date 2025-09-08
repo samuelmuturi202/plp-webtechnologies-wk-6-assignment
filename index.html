@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive JS Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Interactive Web Page </h1>
+    <button id="darkModeToggle">🌓 Toggle Dark Mode</button>
+  </header>
+
+  <!-- 🎮 Counter Game -->
+  <section class="interactive-section">
+    <h2>🎮 Counter Game</h2>
+    <p>Click to add 1. Double-click to reset!</p>
+    <div>
+      <span id="counterDisplay">0</span>
+      <button id="counterBtn">➕ Add One</button>
+    </div>
+  </section>
+
+  <!-- ❓ FAQ Section -->
+  <section class="interactive-section">
+    <h2>❓ FAQ (Click to Expand)</h2>
+    <div class="faq-item">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">Why use event listeners?</h3>
+      <p class="faq-answer">Event listeners let you respond to user actions like clicks, hovers, and key presses.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">Can I use this in my projects?</h3>
+      <p class="faq-answer">Absolutely! Feel free to reuse and modify this code.</p>
+    </div>
+  </section>
+
+  <!-- 📑 Tabbed Interface -->
+  <section class="interactive-section">
+    <h2>📑 Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">
+      <p>🌟 Welcome to Tab 1! This is the first tab.</p>
+    </div>
+    <div class="tab-content" id="tab2">
+      <p>🚀 This is Tab 2. You can put any content here!</p>
+    </div>
+    <div class="tab-content" id="tab3">
+      <p>🎉 Tab 3 is party time! Thanks for exploring.</p>
+    </div>
+  </section>
+
+  <!-- 📋 Form Validation -->
+  <section class="interactive-section">
+    <h2>📋 Form Validation</h2>
+    <form id="userForm">
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" required />
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required />
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" required />
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password *</label>
+        <input type="password" id="confirmPassword" required />
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age (13-120) *</label>
+        <input type="number" id="age" required />
+        <span class="error-message"></span>
+      </div>
+
+      <button type="submit">✅ Submit Form</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
