@@ -1,58 +1,38 @@
-# 🧠 Assignment: Interactive Web Pages with JavaScript
+🌟 Overview
+This assignment demonstrates core JavaScript event handling, DOM manipulation, and form validation to create a dynamic, interactive web page — without page reloads. Built using vanilla HTML, CSS, and JavaScript (no frameworks), this project brings user interfaces to life with real-time feedback and engaging components.
 
-Welcome to the exciting world of interactivity! This assignment is all about **making your web pages feel alive**. You’ll learn how to respond to user actions, build engaging components, and validate form input—without reloading the page. This is where JavaScript gets fun, practical, and powerful. 🚀
+Perfect for beginners learning how to make websites respond to user actions!
 
----
+🚀 Features Implemented
+✅ Part 1: JavaScript Event Handling
+Used addEventListener() to respond to:
+click, dblclick → Counter game
+input → Real-time form validation
+submit → Form validation on submission
+mouseover (via CSS :hover) → Button effects
+🎮 Part 2: Interactive Elements (4 Built from Scratch!)
+🌓 Dark/Light Mode Toggle
+Persists user preference using localStorage
+Smooth transitions with CSS
+🎮 Counter Game
+Click to increment
+Double-click to reset
+Color changes based on value
+❓ Collapsible FAQ Section
+Click questions to toggle answers
+Uses classList.toggle() and ARIA attributes for accessibility
+📑 Tabbed Interface
+Switch between content panels
+Highlights active tab
+📋✅ Part 3: Custom Form Validation
+Validates these fields with regex and logic:
 
-## 🎉 Part 1: JavaScript Event Handling and Interactive Elements
-
-Let’s start with the basics of **event handling**. You'll set up JavaScript to listen for user actions like clicks, mouseovers, keyboard input, and more—and respond to them in meaningful ways.
-
-**Goal:** Use event listeners to react to user behavior and trigger changes on the page (e.g., showing messages, toggling classes, hiding/showing content).
-
----
-
-## 🎮 Part 2: Building Interactive Elements
-
-Now it’s time to apply what you’ve learned by creating your own mini interactive features. You can build things like:
-
-* A light/dark mode toggle
-* A counter or button game
-* A collapsible FAQ section
-* A simple dropdown menu
-* A tabbed interface
-
-**Goal:** Use DOM manipulation + events to make the page dynamic and engaging. Be creative!
-
----
-
-## 📋✅ Part 3: Form Validation with JavaScript
-
-Forms are essential to the web—and validating them properly is key to good user experience. You’ll build a form with multiple input fields (name, email, password, etc.) and write JavaScript to validate each field when the user submits or types.
-
-**Goal:** Prevent incorrect form submissions by writing custom validation logic using conditions and regular expressions. Show user-friendly error messages and success feedback.
-
----
-
-## Deliverables
-
-* `index.html`: Your structured web page with at least one form and several interactive sections
-* `script.js`: Your JavaScript file with:
-
-  * Event handling for buttons, inputs, or links
-  * At least 2 interactive features created from scratch
-  * A fully functioning custom form validation (no HTML5-only validation)
-* `style.css` (optional but encouraged): To style your interactive elements
-
-Each section of your JavaScript should be commented to explain its purpose.
-
----
-
-## Outcome
-
-* Use of event listeners and appropriate event types
-* Creativity and functionality of interactive elements
-* Form validation accuracy and helpfulness of feedback
-* Clear, modular, and well-commented JavaScript code
-* A clean and functional user experience
+Full Name: ≥2 letters, no numbers/symbols
+Email: Valid email format (e.g., user@example.com)
+Password: 8+ chars, 1 uppercase, 1 number, 1 symbol
+Confirm Password: Must match password
+Age: Number between 13–120
+✅ Real-time feedback with color-coded ✅/❌ icons
+✅ Prevents submission if invalid using event.preventDefault()
+✅ User-friendly error messages
 
